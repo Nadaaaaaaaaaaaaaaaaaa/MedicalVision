@@ -37,10 +37,6 @@
 | **AI Models**  | TensorFlow/Keras (3D U-Net), Scikit-learn (tabular)                            |
 | **Database**   | MySQL (relational), MinIO (DICOM storage)                                      |
 
----
-
-## 📂 Project Download
-[![Download](https://img.shields.io/badge/Google_Drive-Download_Complete_Project-blue?logo=google-drive)](https://drive.google.com/file/d/13Ly_4l5KmrfM12r_rSIWVnwoZbE8zaZC/view?usp=sharing)  
 
 ---
 
