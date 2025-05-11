@@ -1,55 +1,50 @@
-# MedicalVision
-🧠 MedVision
-MedVision is a web-based application designed to simplify and automate routine data processing tasks for medical researchers. It supports both tabular data and medical image analysis, providing an all-in-one platform for data visualization, preprocessing, model training, result evaluation, and comparison — all while maintaining a history of experiments.
+# 🧠 MedVision - Medical Research Automation Platform
 
-🌟 Features
-📁 Data Import (Tabular & Medical Images)
+[![Open in GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/Nadaaaaaaaaaaaaaaaaaa/MedicalVision)
+[![Demo Video](https://img.shields.io/badge/📺-Demo_Video-red)](https://drive.google.com/file/d/1z5cbp8tV79wsfxuc33Z6Ud1js6intV-O/view?usp=drive_link)
+[![Download Project](https://img.shields.io/badge/📦-Download_Full_Project-green)](https://drive.google.com/file/d/13Ly_4l5KmrfM12r_rSIWVnwoZbE8zaZC/view?usp=sharing)
 
-📊 Visualization Tools (Histograms, statistics, image metadata, etc.)
+**Web-based platform for end-to-end medical data processing**  
+*Supports tabular data & medical images with experiment tracking*
 
-⚙️ Preprocessing Pipelines (Normalization, resizing, slicing, etc.)
+---
 
-🧠 Model Training (Including U-Net + Inception-based models)
+## 🌟 Features
+| Category              | Capabilities                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| **Data Import**       | CSV/Excel/DICOM                                                    |
+| **Visualization**     | 3D slicers, histograms, layer fusion                                      |
+| **Preprocessing**     | Auto-normalization, skull-stripping, patch extraction                     |
+| **Model Training**    | U-Net, Inception hybrids, AutoML configs                                  |
+| **Evaluation**        | Dice score, ROC curves, confusion matrices                               |
+| **Collaboration**     | Exportable reports, version comparisons                                   |
 
-📈 Evaluation Metrics (Accuracy, Dice coefficient, Recall, etc.)
+---
 
-🔄 Result Comparison (Multiple model outputs for informed decision-making)
+## 🎥 Interactive Demo
+[![MedVision Demo](https://img.shields.io/badge/▶️-Watch_Full_Demo-red)](https://drive.google.com/file/d/1z5cbp8tV79wsfxuc33Z6Ud1js6intV-O/view?usp=drive_link)
+*(Click to see live preprocessing + tabular data treatment demo)*
 
-📝 Experiment Tracking (Project history for reproducibility)
+---
 
-🖥️ Tech Stack: React (Frontend), Flask (Backend), MySQL (Database)
+---
 
-📸 Demo
-👉 Watch Demo Video
-📦 Download the Full Project Files (Google Drive)
+## 📊 Tech Stack
+| Component       | Technology Stack                                                                 |
+|----------------|---------------------------------------------------------------------------------|
+| **Frontend**   | React + Redux, Three.js (3D), Plotly.js                                         |
+| **Backend**    | Flask, Celery (async tasks), OpenCV/PyDICOM                                     |
+| **AI Models**  | TensorFlow/Keras (3D U-Net), Scikit-learn (tabular)                            |
+| **Database**   | MySQL (relational), MinIO (DICOM storage)                                      |
 
-Due to the large size of medical image data and models, the complete project is stored on Google Drive.
+---
 
-🚀 Getting Started
-Prerequisites
-Python 3.9+
+## 📂 Project Download
+[![Download](https://img.shields.io/badge/Google_Drive-Download_Complete_Project-blue?logo=google-drive)](https://drive.google.com/file/d/13Ly_4l5KmrfM12r_rSIWVnwoZbE8zaZC/view?usp=sharing)  
 
-Node.js 18+
+---
 
-MySQL Server (Local)
-
-Virtualenv (recommended)
-
-1. Backend Setup (Flask)
-bash
-Copier le code
-cd backend
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
-python app.py
-2. Frontend Setup (React)
-bash
-Copier le code
-cd frontend
-npm install
-npm start
-3. Database Setup
-Import the provided schema.sql into your local MySQL server.
-
-Update database credentials in config.py.
+## 🚀 Quick Deployment
+### 1-Click Setup (Docker)
+```bash
+docker-compose -f docker-compose.prod.yml up --build
